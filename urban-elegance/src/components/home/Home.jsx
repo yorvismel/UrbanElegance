@@ -1,17 +1,33 @@
-import Header from "../header/Header"
-import ContentHome from '../contentHome/ContentHome'
-import './Home.css'
+import Header from "../header/Header";
+import ContentHome from "../contentHome/ContentHome";
+import "./Home.css";
+// import SeccionBottom from "../seccionBoton/SeccionBoton"
+import { Link } from "react-router-dom";
+import Footer from "../../footer/Footer";
+import Ticker from "../tickers/Tickers";
 
 const Home = () => {
-    return(
-        
-        
-        <div className="home-container">
-        <Header/>
-            <ContentHome />
+  return (
+    <>
+      <div className="home-container">
+        <Header />
+        <div className="ticker-container">
+          <Ticker />
         </div>
-        
-    )
-}
 
-export default Home
+        <Link to="/store">
+          <ContentHome />
+        </Link>
+      </div>
+
+      {/* <div className="container-carousel">
+        <SeccionBottom />
+        <SeccionBottom />
+        
+        </div> */}
+      <Footer />
+    </>
+  );
+};
+
+export default Home;

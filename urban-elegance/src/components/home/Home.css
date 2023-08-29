@@ -6,6 +6,21 @@
     padding: 20px;
     background-color:#F5F5F5;
   }
+  .container-carousel {
+  
+    margin-top: 12px;
+    width: 50%;
+    height: 50%;
+    
+  
+  }
   
   /* Puedes agregar más estilos según sea necesario */
+  
+  .ticker-container {
+    margin-top: 14px;
+    width: 100%; /* Asegura que el ticker ocupe el ancho completo */
+    overflow: hidden; /* Oculta cualquier contenido que se salga del ancho */
+    white-space: nowrap; /* Evita el salto de línea del ticker */
+  }
   

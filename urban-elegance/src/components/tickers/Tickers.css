@@ -1,0 +1,22 @@
+.ticker {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .ticker-text {
+    display: inline-block;
+    padding-left: 0%; /* Inicia la animación fuera del contenedor */
+    animation: marquee  60s linear infinite;
+    font-size: 14px;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
