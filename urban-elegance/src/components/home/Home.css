@@ -1,0 +1,11 @@
+/* Home.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color:#F5F5F5;
+  }
+  
+  /* Puedes agregar más estilos según sea necesario */
+  
