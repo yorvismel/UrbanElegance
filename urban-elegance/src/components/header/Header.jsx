@@ -25,8 +25,12 @@ const Header = () => {
         <button className="search-button">Buscar</button>
       </div>
       <div className="login">
+        <Link to="/login">
         <button className="login-button">Iniciar Sesión</button>
+        </Link>
+        <Link to='/register'>
         <button className="login-button">Registrarse</button>
+        </Link>
         
       </div>
       <Link to='/cart' className="icon-cart">

@@ -3,7 +3,7 @@ import ContentHome from "../contentHome/ContentHome";
 import "./Home.css";
 // import SeccionBottom from "../seccionBoton/SeccionBoton"
 import { Link } from "react-router-dom";
-import Footer from "../../footer/Footer";
+import Footer from "../footer/Footer";
 import Ticker from "../tickers/Tickers";
 
 const Home = () => {
@@ -16,6 +16,7 @@ const Home = () => {
         </div>
 
         <Link to="/store">
+          <ContentHome />
           <ContentHome />
         </Link>
       </div>
