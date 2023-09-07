@@ -9,8 +9,8 @@ const FormRegister = () => {
   const { displayName } = auth.user;
   console.log(displayName);
 
-  const [emailRegister, setEmailRegister] = useState("");
-  const [passwordRegister, setPasswordRegister] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 //   const [fullName, setFullName] = useState(""); // Agregado: Nombre completo
 //   const [birthdate, setBirthdate] = useState(""); // Agregado: Fecha de nacimiento
 
@@ -20,16 +20,16 @@ const FormRegister = () => {
     try {
       // Crear un objeto con los datos del usuario
       const userData = {
-        email: emailRegister,
-        password: passwordRegister,
+        email: email,
+        password: password,
        
       };
   
       // Llamar a la función de registro de autenticación con el objeto de datos del usuario
-      await auth.register(userData);
+      await auth.register(email, password);
   
       // Redirigir o realizar otras acciones después del registro exitoso
-      navigate('/');
+      navigate('/store');
     } catch (error) {
       console.error("Error al registrar al usuario:", error);
       // Manejo de errores, muestra un mensaje de error al usuario si es necesario
@@ -48,13 +48,13 @@ const FormRegister = () => {
         <h3 className="title">Register</h3>
 
         <input
-          onChange={(e) => setEmailRegister(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
           className="input"
           type="email"
           placeholder="Email"
         />
         <input
-          onChange={(e) => setPasswordRegister(e.target.value)}
+          onChange={(e) => setPassword(e.target.value)}
           className="input"
           type="password"
           placeholder="Password"

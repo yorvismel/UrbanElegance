@@ -5,6 +5,7 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import Footer from "../footer/Footer";
 import Ticker from "../tickers/Tickers";
+import Card from "../card/Card";
 
 const Home = () => {
   return (
@@ -17,9 +18,13 @@ const Home = () => {
 
         <Link to="/store">
           <ContentHome />
-          <ContentHome />
+          
+          
+          
         </Link>
+        
       </div>
+      <Card/>
 
       {/* <div className="container-carousel">
         <SeccionBottom />
