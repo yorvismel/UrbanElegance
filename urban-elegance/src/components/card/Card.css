@@ -1,0 +1,42 @@
+/* Card.css */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 18px;
+  color: #ff5722; /* Color de precio destacado */
+}
+
+.product-description {
+  font-size: 16px;
+  color: #666; /* Color del texto de descripción */
+}
